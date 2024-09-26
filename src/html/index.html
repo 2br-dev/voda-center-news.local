@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		@@include('./parts/head.html', {title: "Список новостей"})
+	</head>
+	<body>
+		@@include('./parts/header.html')
+		<main>
+			<section>
+				<div class="container">
+					<div class="row">
+						<div class="col s12">
+							<h1 class="styled">Новости компании</h1>
+						</div>
+					</div>
+					<div class="row flex">
+						@@loop('./parts/news-card.html', './data/news.json')
+						<div class="col">
+							<ul class="pagination">
+								<li><a href="" class="page">‹</a></li>
+								<li><a href="" class="page"></a></li>
+								<li><span>…</span></li>
+								<li><a href="" class="page">6</a></li>
+								<li><a href="" class="page">7</a></li>
+								<li><a href="" class="page active">8</a></li>
+								<li><span>…</span></li>
+								<li><a href="" class="page">21</a></li>
+								<li><a href="" class="page">›</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		@@include('./parts/footer.html')
+	</body>
+</html>

@@ -1,0 +1,10 @@
+@import "./parts/header";
+@import "./parts/footer";
+@import "./parts/normalize";
+@import "./parts/typography";
+@import "./parts/vars";
+@import "./parts/custom_grid";
+@import "../../node_modules/swiper/swiper.scss";
+
+@import "./pages/main";
+@import "./pages/news-page";

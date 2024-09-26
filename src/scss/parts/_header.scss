@@ -1,0 +1,96 @@
+header {
+	padding-top: 15px;
+	background: #fff;
+	min-height: 60px;
+	padding-bottom: 20px;
+	z-index: 3;
+	position: fixed;
+	box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.3);
+	width: 100%;
+	top: 0;
+	left: 0;
+
+	.headerLogo {
+		position: absolute;
+		/* height: 60px; */
+		width: 110px;
+		left: 50%;
+		margin-left: -55px;
+		top: 15px;
+	}
+
+	.header_content {
+		display: flex;
+		justify-content: space-between;
+		padding: 0 30px;
+		min-height: 60px;
+	}
+
+	.header_content_left {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+	}
+
+	.header_content_right {
+		display: flex;
+		justify-content: space-between;
+		max-width: 50%;
+		align-items: center;
+	}
+
+	.headerMenu_link {
+		margin-top: 5px;
+		display: inline-block;
+		height: 17px;
+		cursor: pointer;
+	}
+
+	.headerMenu_link a {
+		display: block;
+		width: 50px;
+		position: relative;
+		height: 2px;
+		background-color: #0068ff;
+	}
+
+	.headerMenu_link a:after {
+		position: absolute;
+		height: 2px;
+		background-color: #0068ff;
+		width: 50px;
+		content: "";
+		top: 15px;
+	}
+
+	.header_content_phone {
+		margin-left: 50px;
+	}
+
+	.header_content_phone a {
+		font-family: "stolzlbook", sans-serif;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 18px;
+		line-height: 22px;
+		text-decoration: none;
+		color: #0068ff;
+		display: block;
+	}
+
+	.headerUser {
+		font-family: "stolzlbook", sans-serif;
+		color: #0068ff;
+		font-size: 18px;
+		margin-right: 50px;
+	}
+
+	.mobile {
+		display: none;
+	}
+
+	.headerUser a {
+		text-decoration: none;
+		color: #0068ff;
+	}
+}

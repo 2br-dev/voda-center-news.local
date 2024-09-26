@@ -1,0 +1,82 @@
+footer {
+	margin-top: 30px;
+	position: relative;
+	padding-bottom: 35px;
+	background: #ffffff;
+
+	& .footer_wrap {
+		max-width: 1920px;
+		margin: 0 auto;
+		display: flex;
+		padding: 0 30px;
+		justify-content: space-between;
+		border-top: 1px solid #969696;
+		padding-top: 30px;
+
+		& .footer_menu {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+		}
+
+		& a {
+			color: #000;
+			font-size: 16px;
+			line-height: 19px;
+			text-decoration: none;
+			margin-bottom: 15px;
+			display: inline-block;
+
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+
+		.footer_auth a {
+			color: #0068ff;
+			font-size: 16px;
+			text-decoration: none;
+		}
+
+		.footer_contacts_phone a:first-child:before {
+			content: "Т:";
+			text-transform: uppercase;
+			color: #0068ff;
+			margin-right: 7px;
+		}
+
+		.footer_contacts_email p:before {
+			content: "E:";
+			text-transform: uppercase;
+			color: #0068ff;
+			margin-right: 7px;
+		}
+
+		.footer_contacts_address p:before {
+			content: "A:";
+			text-transform: uppercase;
+			color: #0068ff;
+			margin-right: 7px;
+		}
+
+		.footer_app_link {
+			margin-bottom: 100px;
+		}
+
+		.footer_social_vk {
+			background: url("/templates/vodacentr/resource/img/vk_ico.png")
+				no-repeat center;
+			background-size: contain;
+		}
+
+		.footer_menu_social a {
+			width: 60px;
+			height: 60px;
+		}
+
+		.mainMenu .mobile,
+		.footer_auth .mobile {
+			display: none !important;
+		}
+	}
+}

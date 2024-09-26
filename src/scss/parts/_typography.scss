@@ -1,0 +1,63 @@
+@font-face {
+	font-family: "stolzlbook";
+	src: url("/fonts/stolzl-webfont.eot");
+	src: url("/fonts/stolzl-webfont.eot?#iefix") format("embedded-opentype"),
+		url("/fonts/stolzl-webfont.woff2") format("woff2"),
+		url("/fonts/stolzl-webfont.woff") format("woff"),
+		url("/fonts/stolzl-webfont.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Material Icons";
+	font-style: normal;
+	font-weight: 400;
+	src: url(https://fonts.gstatic.com/s/materialicons/v43/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2)
+		format("woff2");
+}
+
+.material-icons {
+	font-family: "Material Icons";
+	font-weight: normal;
+	font-style: normal;
+	font-size: 30px;
+	line-height: 1;
+	letter-spacing: normal;
+	text-transform: none;
+	display: inline-block;
+	white-space: nowrap;
+	word-wrap: normal;
+	direction: ltr;
+	-webkit-font-feature-settings: "liga";
+	-webkit-font-smoothing: antialiased;
+}
+.material-icons-outlined {
+	font-family: "Material Icons Outlined";
+	font-weight: normal;
+	font-style: normal;
+	font-size: 30px;
+	line-height: 1;
+	letter-spacing: normal;
+	text-transform: none;
+	display: inline-block;
+	white-space: nowrap;
+	word-wrap: normal;
+	direction: ltr;
+	-webkit-font-feature-settings: "liga";
+	-webkit-font-smoothing: antialiased;
+}
+
+body {
+	font-family: "stolzlbook";
+
+	& h1.styled {
+		font-size: clamp(32px, 5vw, 72px);
+		margin-top: 0;
+	}
+
+	& h2.styled {
+		font-size: clamp(26px, 5vw, 42px);
+		margin-top: 0;
+	}
+}
